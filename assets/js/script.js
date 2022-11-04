@@ -117,7 +117,7 @@ const showBarang = () => {
                 <table class="w-100">
                     <tr>
                         <td rowspan="3" class="text-center align-middle" style="min-width: 90px;">
-                            <img draggable="false" src="/assets/images/${element[1]}" class="card-img-top order-list">
+                            <img draggable="false" src="./assets/images/${element[1]}" class="card-img-top order-list">
                         </td>
                         <td class="w-100">
                             <span class="type">${element[3]}</span>
@@ -249,7 +249,7 @@ const generateCardMenu = () => {
     daftarMenu.forEach(element => {
         listMenu.innerHTML += `
             <div class="card order" id="card-${element.name}" onclick="inputState('${element.name}')">
-                <img draggable="false" src="/assets/images/${element.img}" class="card-img-top order mx-auto p-3">
+                <img draggable="false" src="./assets/images/${element.img}" class="card-img-top order mx-auto p-3">
                 <div class="">
                     <h6 class="f-bold mb-0">${element.name}</h6>
                     <h6 class="text-warning">${formatNumber(element.price, true)}</h6>
